@@ -18,24 +18,41 @@
   </properties>
 
   <dependencies>
-    <!-- Scala library -->
     <dependency>
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-library</artifactId>
       <version>${scala.version}</version>
     </dependency>
 
-    <!-- ScalaTest for testing -->
     <dependency>
       <groupId>org.scalatest</groupId>
       <artifactId>scalatest_${scala.binary.version}</artifactId>
       <version>${scalatest.version}</version>
       <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>org.locationtech.jts</groupId>
       <artifactId>jts-core</artifactId>
       <version>1.19.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.circe</groupId>
+      <artifactId>circe-core_2.13</artifactId>
+      <version>0.14.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.circe</groupId>
+      <artifactId>circe-generic_2.13</artifactId>
+      <version>0.14.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.circe</groupId>
+      <artifactId>circe-parser_2.13</artifactId>
+      <version>0.14.1</version>
     </dependency>
   </dependencies>
 
