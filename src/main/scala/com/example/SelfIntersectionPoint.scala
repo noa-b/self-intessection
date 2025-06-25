@@ -13,8 +13,8 @@ case class SelfIntersectionPoint(
                                   var _stateJ: Boolean = false,
                                   _sameindex: Vector[Int] = Vector.empty
                                 ) {
-  def canTraceFromI: Boolean = !_stateI && _toiI
-  def canTraceFromJ: Boolean = !_stateJ && _tojI
+  private def canTraceFromI: Boolean = !_stateI && _toiI
+  private def canTraceFromJ: Boolean = !_stateJ && _tojI
 
   def traceFromI(): Unit = {
     if (canTraceFromI) _stateI = true

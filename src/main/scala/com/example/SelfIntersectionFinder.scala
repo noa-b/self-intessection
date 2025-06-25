@@ -4,7 +4,7 @@ case class Point(x: Double, y: Double)
 case class Segment(p1: Point, p2: Point)
 
 object GeometryUtils {
-  def ccw(a: Point, b: Point, c: Point): Boolean = {
+  private def ccw(a: Point, b: Point, c: Point): Boolean = {
     (c.y - a.y) * (b.x - a.x) > (b.y - a.y) * (c.x - a.x)
   }
 
